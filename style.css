@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bree+Serif&family=DM+Serif+Display:ital@0;1&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
+@keyframes spin {
+    from {
+        transform: rotate(0deg); /* Start position */
+    }
+    to {
+        transform: rotate(360deg); /* End position (one full rotation) */
+    }
+}
+@keyframes scale-animation {
+    0% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.2); /* Scaled up by 50% */
+    }
+    100% {
+        transform: scale(1); /* Back to normal size */
+    }
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: "Bree Serif", serif;
+    font-weight: 900;
+    font-style: normal;
+    color:black;
+}
+
+
+header img
+{
+    width: 50px;
+    animation: spin 3s linear infinite;
+   
+}
+nav{
+    float: right;
+    width: 50%;
+}
+nav ul{
+display: flex;
+justify-content: space-around;
+}
+nav ul li{
+    list-style: none;
+ 
+
+}
+nav ul li a
+{
+    text-decoration: none;
+  
+    font-size: medium;
+    font-weight: 300;
+    font-style: oblique;
+    /* border:1px solid rgb(255, 255, 255); */
+    padding:3px 8px;
+    color:rgb(41, 40, 40);
+    border-radius: 10px;
+    background: rgb(252,171,104);
+    background: linear-gradient(49deg, rgba(252,171,104,1) 0%, rgba(251,141,119,1) 100%);
+    transition: ease-in 1s !important;
+    box-shadow: white 2px 1px 2px;
+
+   
+}
+header nav ul li:hover a
+{
+    transform: scale(1.2)!important;
+   
+}
+.main-page
+{
+    
+    display: flex;
+    justify-content: space-around;
+  
+    color:lightskyblue;
+    padding: 20px;
+    background: rgb(176,132,243);
+background: linear-gradient(41deg, rgba(176,132,243,1) 0%, rgba(75,127,248,1) 100%);
+max-width: 1400px;
+min-width: 900px;
+padding-top: 6em;
+}
+    
+
+
+.main-page1
+{
+    flex-basis: 40%;
+    padding:20px;
+    font-family: "Bree Serif", serif;
+    font-weight: 900;
+    font-style: normal;
+    color:black;
+    ;
+    /* background-image: url(images/ngo-services-logo-template-i6ktowa126f192.webp); */
+
+    
+}
+.main-page1 h1
+{
+    font-size: xxx-large;
+   
+      }
+      .main-page:hover h1{
+        text-shadow: 5px 5px 5px white;;
+      }
+
+.main-page1 h4
+{
+    font: 100;
+    font-style: oblique;
+    color:rgb(48, 47, 47);
+}
+.button{
+    padding: 8px 20px;
+    border:rgb(255, 255, 255) 1px solid;
+    font-weight: 900;
+    color:rgb(19, 18, 18);
+    border-radius: 10px;
+    background: rgb(252,171,104);
+    font-family: "Bree Serif", serif;
+    font-weight: 300;
+    font-style: normal;
+    transition: ease ease-in-out .5s;
+   
+
+    background: linear-gradient(49deg, rgba(252,171,104,1) 0%, rgba(251,141,119,1) 100%);
+}
+.button:hover
+{
+    transform: scale(1.1);
+}
+.main-page div:nth-child(2)
+{
+   width: 45%;
+}
+.main-page div:nth-child(2) img
+{
+   width: 100%;
+   border-radius: 20px;
+
+}
+.flex{
+    background-color: rgb(239, 230, 230);
+    padding: 20px 10px;
+    
+}
+.flex-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap:5px;
+    
+}
+.flex-container div h2{
+    text-align: center;
+    margin:0;
+    width: 60%;
+  margin:auto;
+    /* background-color:  lightskyblue; */
+    color:rgb(32, 32, 32);
+    padding: 5px;
+    position: relative;
+    bottom:1em;
+    font-size: small;
+  visibility: hidden;
+  background: rgb(176,132,243);
+  border-radius: 10px;
+  border:2px white solid;
+  background: linear-gradient(41deg, rgba(176,132,243,1) 0%, rgba(75,127,248,1) 100%);
+ 
+  
+}
+.flex-container div:hover h2{
+   visibility: visible;
+}
+.flex-container div h5{
+    text-align: center;
+    margin:5px;
+   font-size: medium;
+    font-weight: 300;
+    color:rgb(39, 39, 39);
+
+}
+.flex-container div:hover h5
+{
+    text-shadow: whitesmoke 5px 5px 5px;
+}
+.flex h1
+{
+    text-align: center;
+}
+.flex-container>div
+{
+    width: 20%;
+    box-shadow: 5px 5px 5px  lightslategray;
+    border-radius: 20px;
+    overflow: hidden;
+    /* background: rgb(176,132,243);
+    background: linear-gradient(41deg, rgba(176,132,243,1) 0%, rgba(75,127,248,1) 100%); */
+    color:white;
+    font-style: oblique;
+    background: rgb(252,171,104);
+background: linear-gradient(49deg, rgba(252,171,104,1) 0%, rgba(251,141,119,1) 100%);
+
+
+}
+.image
+{
+    width: 100%;
+    transition: ease-in 0.5s;
+}
+.image img{
+    width:100%; 
+    border-radius: 15px;
+    
+
+}
+.flex-container div:hover .image{
+    transform: scale(0.9) translateZ(-50px);
+}
+.quote
+{
+    /* border:red 1px solid; */
+    /* background-color:rgb(81, 63, 82); */
+    margin:20px 0 0 0;
+    padding: 3em;
+    background: rgb(252,171,104);
+
+background: linear-gradient(41deg, rgba(176,132,243,1) 0%, rgba(75,127,248,1) 100%);
+
+
+
+}
+.quote h3
+{
+
+    font-size: x-large;
+    color:rgb(46, 45, 45);
+    width: 60%;
+    margin:auto;
+    font-style: oblique;
+    font-weight: 400;
+    
+}
+.quote h5
+{
+   
+    color:white;
+    font-size: x-large;
+    text-align: end;
+    color:black;
+}
+.sign-wrapper{
+   
+    padding:50px;
+    margin-bottom: 0;
+    background: rgb(252,171,104);
+    background: linear-gradient(49deg, rgba(252,171,104,0.8) 0%, rgba(251,141,119,1) 100%);
+
+}
+.sign-up
+{
+    width:60%;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    /* border:2px solid black; */
+    background-color:rgb(81, 63, 82);
+    color:rgb(0, 0, 0);
+    border-radius: 20px;
+    padding:20px;
+   
+ 
+    background: rgb(176,132,243);
+background: linear-gradient(41deg, rgba(176,132,243,1) 0%, rgba(75,127,248,1) 100%);
+}
+.sign-up-page h3
+{
+    margin:5px;
+    font-size: x-large;
+    font-style: oblique;
+   padding:15px;
+   text-shadow: whitesmoke 2px 2px 2px;
+   animation: scale-animation 2s ease-in-out infinite; 
+}
+.sign-up div:nth-child(2){
+    margin:2em;
+}
+footer
+{
+    
+    color:rgb(70, 68, 68);
+   font-weight: 400;
+   text-align: center;
+   background: rgb(176,132,243);
+background: linear-gradient(41deg, rgba(176,132,243,1) 0%, rgba(75,127,248,1) 100%);
+}
+header{
+    background: rgb(176,132,243);
+    background: linear-gradient(41deg, rgb(79, 52, 119) 0%, rgba(75,127,248,1) 100%);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 1;
+   
+
+}
+
